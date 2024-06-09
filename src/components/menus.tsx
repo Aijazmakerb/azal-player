@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react';
+import type { ReactElement, SVGProps } from 'react';
 
 import {
   Menu,
@@ -92,7 +92,7 @@ export interface SubmenuButtonProps {
   label: string;
   hint: string;
   disabled?: boolean;
-  icon: ReactElement;
+  icon: ReactElement<SVGProps<SVGSVGElement>>;
 }
 
 function SubmenuButton({ label, hint, icon: Icon, disabled }: SubmenuButtonProps) {
